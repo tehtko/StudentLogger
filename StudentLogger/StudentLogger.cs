@@ -37,7 +37,6 @@ namespace StudentLogger
         {
             txtFirstName.Text = null;
             txtLastName.Text = null;
-
         }
 
         private void StudentLogger_Load(object sender, EventArgs e)
