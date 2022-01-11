@@ -29,6 +29,7 @@ namespace StudentLogger
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentLogger));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -159,17 +160,25 @@ namespace StudentLogger
             // dgvStudents
             // 
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudents.Location = new System.Drawing.Point(311, 90);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvStudents.Location = new System.Drawing.Point(319, 90);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.RowTemplate.Height = 25;
-            this.dgvStudents.Size = new System.Drawing.Size(511, 217);
+            this.dgvStudents.Size = new System.Drawing.Size(543, 217);
             this.dgvStudents.TabIndex = 999;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(289, 9);
+            this.label5.Location = new System.Drawing.Point(281, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(246, 45);
             this.label5.TabIndex = 14;
@@ -190,7 +199,7 @@ namespace StudentLogger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 336);
+            this.ClientSize = new System.Drawing.Size(874, 336);
             this.Controls.Add(this.cmbAge);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dgvStudents);
@@ -208,6 +217,7 @@ namespace StudentLogger
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StudentLogger";
             this.Text = "Student Logger";
+            this.Load += new System.EventHandler(this.StudentLogger_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
