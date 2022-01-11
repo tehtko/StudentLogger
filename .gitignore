@@ -364,7 +364,4 @@ FodyWeavers.xsd
 
 # Connection String
 *.ConnectionString
-\StudentLoggerLibrary\ConnectionString.cs
-StudentLoggerLibrary\ConnectionString.cs
-/StudentLoggerLibrary/ConnectionString.cs
 StudentLoggerLibrary/ConnectionString.cs
