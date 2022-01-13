@@ -15,7 +15,6 @@ namespace StudentLoggerLibrary
             {
                 ageRangeList.Add(x);
             }
-
         }
     }
 }
