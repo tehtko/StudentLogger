@@ -8,6 +8,6 @@ Create, Read, Update and Delete Students from a database using EFCore, and .NET 
 - Better project setup / management (use of ClassLibraries, Folders, etc..)
 
 ## Todo;
-[] More update methods
-[] Validation
-[] Simpler UI
+- [] More update methods
+- [] Validation
+- [] Simpler UI
