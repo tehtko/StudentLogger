@@ -1,7 +1,7 @@
 # StudentLogger
 Create, Read, Update and Delete Students from a database using EFCore, and .NET 5.0
 
-## What I Learned;
+## What I Learned
 - Better understanding of CRUD with EFCore
 - Lambda functions
 - Datagridview databinding
