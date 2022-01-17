@@ -12,7 +12,7 @@ namespace StudentLoggerLibrary
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(ConnectionString.cnnString);
+            options.UseSqlServer("");
         }
 
         public DbSet<Student> Students { get; set; }
